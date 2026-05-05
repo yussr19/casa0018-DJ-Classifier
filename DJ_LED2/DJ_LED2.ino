@@ -102,13 +102,23 @@ void loop()
         }
     }
     if (maxIdx == 0) {
-        strip.fill(strip.Color(0, 0, 255));
+        // bass drop - blue chase effect
+        for(int j = 0; j < 3; j++) {
+            for(int i = 0; i < LED_COUNT; i++) {
+                strip.clear();
+                strip.setPixelColor(i, strip.Color(0, 0, 255));
+                strip.setPixelColor((i + LED_COUNT/2) % LED_COUNT, strip.Color(0, 0, 128));
+                strip.show();
+                delay(30);
+            }
+        }
     } else if (maxIdx == 2) {
         strip.fill(strip.Color(255, 0, 0));
+        strip.show();
     } else {
         strip.fill(strip.Color(0, 255, 0));
+        strip.show();
     }
-    strip.show();
 }
 
 #if !defined(EI_CLASSIFIER_SENSOR) || EI_CLASSIFIER_SENSOR != EI_CLASSIFIER_SENSOR_MICROPHONE
