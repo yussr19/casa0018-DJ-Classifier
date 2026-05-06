@@ -48,7 +48,7 @@ This project explores whether **edge machine learning** can provide a low-cost a
 | 330Ω Resistor | Data-line protection | <£1 |
 | 100µF Capacitor | Power smoothing | <£1 |
 | Breadboard + Jumper Wires | Circuit assembly | £3 |
-| 3D Printed Enclosure | `YUSSR_DOME.stl` + `light_boxx.stl` | ~£2 |
+| 3D Printed Enclosure | `DOME.stl` + `light_boxx.stl` | ~£2 |
 
 **Estimated total cost:** ~£48
 
